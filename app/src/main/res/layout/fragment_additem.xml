@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingTop="10dp">
+            <ImageView
+                android:src="@mipmap/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <TextView
+            style="@style/headerText"
+            android:text="Add an item"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="2dp"/>
+        <HorizontalScrollView
+            android:background="@drawable/dashed"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="8dp"
+            android:paddingTop="20dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imgitem"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="120sp"
+                    android:alpha="0.3"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/addphoto"/>
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="120sp"
+                    android:alpha="0.3"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/addphoto"/>
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="120sp"
+                    android:alpha="0.3"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/addphoto"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/googlesansregular"
+                    android:gravity="center"
+                    android:text="Item Name:" />
+                <EditText
+                    android:background="@drawable/input_borders"
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtitem"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:gravity="top"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="Description:" />
+                <EditText
+                    android:background="@drawable/input_borders"
+                    android:layout_width="match_parent"
+                    android:maxLines="5"
+                    android:gravity="top|left"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/txtdescription"
+                    android:layout_height="100dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="Tags:" />
+
+                <com.android.support.chip.Chip
+                    android:id="@+id/chip"
+                    android:background="@drawable/input_borders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chip" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progressadditem"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/button_pink"
+                android:id="@+id/btnsaveitem"
+                android:textSize="17dp"
+                android:text="SAVE"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                style="@style/button_grey"
+                android:id="@+id/btncancelitem"
+                android:textSize="17dp"
+                android:text="CANCEL"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

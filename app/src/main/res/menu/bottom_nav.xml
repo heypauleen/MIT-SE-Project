@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navhome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Feed" />
+    <item
+        android:id="@+id/navrequest"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="Request" />
+    <item
+        android:id="@+id/navmystuff"
+        android:icon="@drawable/ic_gift"
+        android:title="My Stuff" />
+    <item
+        android:id="@+id/navmsg"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/navaccount"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+
+
+
+
+
+</menu>
